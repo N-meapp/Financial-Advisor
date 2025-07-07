@@ -1,0 +1,112 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us</title>
+  <link rel="stylesheet" href="{% static '/css/contact.css' %}">
+
+</head>
+<body>
+    <header>
+        <div class="logo">CountWise</div>
+        <nav>
+        <a href="/">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Service</a>
+        <a href="#">DIA</a>
+        <a href="/investor">Investing Insights</a>
+        <a href="/blog">Blogs</a>
+        </nav>
+        <a class="contact-btn" href="/contact">Contact us</a>
+    </header>
+  <section class="contact-section">
+    <div class="container">
+      <div class="contact-left">
+        <h2>Send a <span class="highlight">message</span><br>to get your free quote</h2>
+        <p>Velit sit consectetur sed pharetra nisl bibendum sagittis duis. Eu laoreet natoque</p>
+        <div class="social-icons">
+          <span>Follow us on</span>
+          <div class="icons">
+            <a href="#"><img src="https://img.icons8.com/ios-filled/25/ffffff/instagram-new.png"/></a>
+            <a href="#"><img src="https://img.icons8.com/ios-filled/25/ffffff/twitter.png"/></a>
+            <a href="#"><img src="https://img.icons8.com/ios-filled/25/ffffff/linkedin.png"/></a>
+            <a href="#"><img src="https://img.icons8.com/ios-filled/25/ffffff/facebook.png"/></a>
+          </div>
+        </div>
+      </div>
+      <div class="contact-right">
+        <form>
+          <div class="row">
+            <input type="text" placeholder="Enter your name" required />
+            <input type="email" placeholder="Enter your e-mail" required />
+          </div>
+          <div class="row">
+            <input type="text" placeholder="Enter your number" required />
+            <input type="text" placeholder="Ex. services" required />
+          </div>
+          <textarea placeholder="Enter your message...." rows="5" required></textarea>
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+      <footer class="site-footer">
+        <div class="footer-top">
+            <div class="footer-brand">
+            <h2><span class="logo-icon">🟢</span> <strong>Count</strong>Wise</h2>
+            <p>Individuals around the globe, find a mentor, expand and learn from incredible people.</p>
+            <a href="#" class="footer-cta">Contact us</a>
+            </div>
+
+            <div class="footer-links">
+            <div class="footer-column">
+                <h4>Main page</h4>
+                <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Service</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Team</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Inner page</h4>
+                <ul>
+                <li><a href="#">Blog details</a></li>
+                <li><a href="#">Service details</a></li>
+                <li><a href="#">Team details</a></li>
+                <li><a href="#">Price</a></li>
+                <li><a href="#">Project</a></li>
+                <li><a href="#">Project details</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Utility pages</h4>
+                <ul>
+                <li><a href="#">Style Guide</a></li>
+                <li><a href="#">Change log</a></li>
+                <li><a href="#">404 page</a></li>
+                <li><a href="#">Licenses</a></li>
+                <li><a href="#">Protected</a></li>
+                </ul>
+            </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2025 CountWise. Powered by <span>Cybexel</span> | Designed by <span>Cybexel</span></p>
+            <div class="footer-socials">
+            <a href="#">📷</a>
+            <a href="#">🐦</a>
+            <a href="#">💼</a>
+            <a href="#">🔗</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
