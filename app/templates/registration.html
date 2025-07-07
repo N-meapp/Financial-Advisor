@@ -1,0 +1,30 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  <link rel="stylesheet" href="{% static '/css/style.css' %}">
+
+</head>
+<body class="registerpage">
+    <div class="container">
+        <div class="content">
+            <!-- <img src="{% static '/images/Cards.jpg' %}"> -->
+            <h1 class="form-title">Register Here</h1>
+            <form>
+            <input type="text" placeholder="NAME">
+            <div class="beside">
+                <input type="number" placeholder="PHONE NUMBER">
+                <input type="text" placeholder="JOB POSITION" class="jobposition"> 
+            </div>
+            <input type="email" placeholder="EMAIL ADDRESS">
+            <input type="number" placeholder="AGE"><br>
+            <button type="button">Submit</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

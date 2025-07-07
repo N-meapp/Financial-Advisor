@@ -1,0 +1,233 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CountWise</title>
+  <link rel="stylesheet" href="{% static '/css/style.css' %}">
+  <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script>
+
+
+</head>
+<body>
+  <header>
+    <div class="logo">CountWise</div>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Service</a>
+      <a href="#">Price</a>
+      <a href="#">Blog</a>
+    </nav>
+    <a class="contact-btn" href="#">Contact us</a>
+  </header>
+
+  <main class="hero">
+    <div class="hero-text">
+      <h1>Transform your <span>finances</span> with trusted accountants.</h1>
+      <p>Lorem ipsum dolor sit amet consectetur. Blandit varius tellus sed maecenas tortor ut.</p>
+      <a class="contact-btn" href="#">Contact us</a>
+    </div>
+    <div class="cardimg">
+        <img src="{% static '/images/credit-card-digital-concept-background.png' %}" alt="">
+    </div>
+    <!-- <div class="hero-card">
+      <div class="card-logo"></div>
+      <div class="card-title">CountWise</div>
+      <div class="card-number">5022 3386 9820 1246</div>
+      <div class="card-type">Finances</div>
+      <div class="card-date">01/10</div>
+    </div> -->
+  </main>
+      <section class="metrics-section">
+    <h2 class="metrics-heading">
+        Important metrics <span>reflecting</span><br />our expertis.
+    </h2>
+
+    <div class="metrics-cards">
+        <div class="metric-card">
+        <h3>15k</h3>
+        <p>Happy clients</p>
+        </div>
+        <div class="metric-card">
+        <h3>10k</h3>
+        <p>Team members</p>
+        </div>
+        <div class="metric-card">
+        <h3>100%</h3>
+        <p>Customer satisfaction</p>
+        </div>
+        <div class="metric-card">
+        <h3>20 year</h3>
+        <p>Years in Business</p>
+        </div>
+    </div>
+    </section>
+
+    <section class="about-section">
+        <div class="about-container">
+            <div class="about-image">
+            <img src="https://images.pexels.com/photos/3760069/pexels-photo-3760069.jpeg" alt="Team discussion" />
+            </div>
+            <div class="about-content">
+            <p class="section-subtitle">About us</p>
+            <h2>
+                Experience professional <span>accounting</span><br />
+                with personal touch.
+            </h2>
+            <p class="about-description">
+                Gorem ipsum dolor sit amet consectetur. Sed nec eu ullamcorper
+            </p>
+            <ul class="about-points">
+                <li>Egestas non morbi blandit convallis.</li>
+                <li>Ornare aliquet enim in semper consequat nibh.</li>
+                <li>Euismod molestie augue sed sem nibh erat.</li>
+            </ul>
+            <a href="#" class="about-btn">More about us</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="services-section">
+        <h2 class="services-heading">
+            Efficient accounting services<br />
+            for <span>business growth.</span>
+        </h2>
+        <p class="services-subtitle">
+            Leo tincidunt viverra id tincidunt nam. Leo cursus mattis nisi accumsan faucibus mauris ut fames.
+        </p>
+
+        <div class="services-cards">
+            <div class="service-card">
+            <div class="service-icon">📊</div>
+            <h3>Tax Planning</h3>
+            <p>The Alico - Insurance Agency WordPress Theme is a WordPress theme designed for</p>
+            </div>
+
+            <div class="service-card">
+            <div class="service-icon">💰</div>
+            <h3>Payroll Management</h3>
+            <p>The Alico - Insurance Agency WordPress Theme is a WordPress theme designed for</p>
+            </div>
+
+            <div class="service-card">
+            <div class="service-icon">🧾</div>
+            <h3>Bookkeeping Services</h3>
+            <p>The Alico - Insurance Agency WordPress Theme is a WordPress theme designed for</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="blog-section">
+        <div class="blog-header">
+            <div class="blog-text">
+            <h2>Latest accounting <span>trends</span><br />and <span>insights</span> here.</h2>
+            <p>
+                Thitar iaculis ac id pulvinar nibh mauris tincidunt at nibh. Leo mattis eu tortor nisl sed elit. In in augue dignissim et
+            </p>
+            </div>
+            <a href="#" class="view-more-btn">View more</a>
+        </div>
+
+        <div class="blog-cards">
+            <div class="blog-card">
+            <img src="https://images.pexels.com/photos/3943720/pexels-photo-3943720.jpeg" alt="Blog 1" />
+            <div class="blog-info">
+                <div class="blog-meta">
+                <span>August 5, 2024</span>
+                <span class="tag">Planning</span>
+                </div>
+                <h3>Essential Steps for Financial Goal Setting</h3>
+                <div class="blog-footer">
+                <a href="#">Read More →</a>
+                <span>7 Minute</span>
+                </div>
+            </div>
+            </div>
+
+            <div class="blog-card">
+            <img src="https://images.pexels.com/photos/6693657/pexels-photo-6693657.jpeg" alt="Blog 2" />
+            <div class="blog-info">
+                <div class="blog-meta">
+                <span>August 3, 2024</span>
+                <span class="tag">Taxes</span>
+                </div>
+                <h3>Improving Accuracy in Financial Reporting</h3>
+                <div class="blog-footer">
+                <a href="#">Read More →</a>
+                <span>7 Minute</span>
+                </div>
+            </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <div class="footer-top">
+            <div class="footer-brand">
+            <h2><span class="logo-icon">🟢</span> <strong>Count</strong>Wise</h2>
+            <p>Individuals around the globe, find a mentor, expand and learn from incredible people.</p>
+            <a href="#" class="footer-cta">Contact us</a>
+            </div>
+
+            <div class="footer-links">
+            <div class="footer-column">
+                <h4>Main page</h4>
+                <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Service</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Team</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Inner page</h4>
+                <ul>
+                <li><a href="#">Blog details</a></li>
+                <li><a href="#">Service details</a></li>
+                <li><a href="#">Team details</a></li>
+                <li><a href="#">Price</a></li>
+                <li><a href="#">Project</a></li>
+                <li><a href="#">Project details</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Utility pages</h4>
+                <ul>
+                <li><a href="#">Style Guide</a></li>
+                <li><a href="#">Change log</a></li>
+                <li><a href="#">404 page</a></li>
+                <li><a href="#">Licenses</a></li>
+                <li><a href="#">Protected</a></li>
+                </ul>
+            </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2025 CountWise. Powered by <span>Cybexel</span> | Designed by <span>Cybexel</span></p>
+            <div class="footer-socials">
+            <a href="#">📷</a>
+            <a href="#">🐦</a>
+            <a href="#">💼</a>
+            <a href="#">🔗</a>
+            </div>
+        </div>
+    </footer>
+
+    <div class="chatbot">
+        <dotlottie-player
+            src="https://lottie.host/7806e3b2-498a-4689-8f59-c2324bbfe265/Mu4Q034a6V.lottie"
+            background="transparent"
+            speed="1"
+            style="width: 200px; height: 200px"
+            loop
+            autoplay
+            ></dotlottie-player>
+    </div>
+
+</body>
+</html>
