@@ -12,6 +12,10 @@ body {
   color: white;
 }
 
+body::-webkit-scrollbar {
+  display: none;
+}
+
 header {
   display: flex;
   justify-content: space-between;
@@ -31,6 +35,10 @@ nav a {
   text-decoration: none;
   color: white;
   font-weight: 500;
+}
+
+.mobile-view-nav{
+  display: none;
 }
 
 .contact-btn {
@@ -136,6 +144,10 @@ box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;}
   color: #ccc;
 }
 
+.nav-items{
+  display: none;
+}
+
 @media (max-width: 768px) {
   .metrics-cards {
     flex-direction: column;
@@ -145,8 +157,142 @@ box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;}
   .metric-card {
     width: 80%;
   }
+
+
+.nav-items{
+  background: #f3f6f8;
+  margin-top: 21rem;
+  position: absolute;
+  /* height: 100vh; */
+  right: 46px;
+  padding: 20px;
+  border-radius: 10px;
+  z-index: 1;
+  width: 78%;
 }
 
+.nav-items a{
+  text-decoration: none;
+  color: #06140f;
+  cursor: pointer;
+}
+
+.item1{
+  width: 100%;
+  margin-bottom: 10px;
+  
+}
+
+.item1:hover{
+  background: #c2bdbd;
+  font-size: 22px;
+  border-radius: 20px;
+  padding: 10px;
+
+}
+
+}
+
+@media (max-width: 1020px) {
+  .hero-text {
+    max-width: 83%;
+}
+
+.mobile-view-nav{
+  display: block;
+  position: relative;
+}
+
+.nav-items{
+  display: none;
+}
+
+
+.web-view-nav{
+  display: none;
+}
+
+.contact-us{
+  display: none;
+}
+
+.nav-items{
+  background: #f3f6f8;
+  margin-top: 27rem;
+  position: absolute;
+  /* height: 100vh; */
+  right: 46px;
+  padding: 15px;
+  border-radius: 10px;
+  z-index: 1;
+  width: 30%;
+}
+
+.nav-items a{
+  text-decoration: none;
+  color: #06140f;
+  cursor: pointer;
+}
+
+.item1{
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+.item1:hover{
+  background: #c2bdbd;
+  /* font-size: 20px; */
+  border-radius: 10px;
+  /* padding-left: 10px; */
+}
+
+}
+
+
+@media(max-width: 420px) {
+.nav-items{
+  position: absolute;
+  width: 67%;
+  margin-top: 24rem;
+  right: 46px;
+  padding: 20px;
+  border-radius: 10px;
+  z-index: 1;
+}
+
+.nav-items a{
+  text-decoration: none;
+  color: #06140f;
+  cursor: pointer;
+}
+
+.item1{
+  margin-bottom: 0px;
+  padding: 9px;
+  
+}
+
+.item1:hover{
+  background: #c2bdbd;
+  font-size: 22px;
+  border-radius: 20px;
+  padding: 10px;
+}
+.blog-section {
+  padding:36px 13px;
+}
+
+}
+
+
+.navbar-btn{
+  background: none;
+}
+
+.navbar-btn:hover{
+  background: none;
+}
 
 /* about section */
 
@@ -302,17 +448,19 @@ box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;}
 /* blog and add section */
 
 .blog-section {
-  padding: 80px 40px;
+  padding: 78px 13px;
   /* background: linear-gradient(to right, #0b0c0f, #0d1117); */
   color: white;
 }
 
 .blog-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-  margin-bottom: 40px;
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+    /* justify-content: center; */
+    padding: 0px 50px;
 }
 
 .blog-text h2 {
@@ -338,6 +486,8 @@ box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;}
   text-decoration: none;
   color: white;
   font-weight: 600;
+  float: right;
+  margin-top: 2rem;
 }
 
 .blog-cards {
@@ -394,13 +544,21 @@ box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;}
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-size: 14px;
+  font-size: 20px;
   color: #ccc;
 }
 
 .blog-footer a {
   color: #00d084;
   text-decoration: none;
+}
+
+.big-footer-contents{
+  margin-top: 1rem;
+  font-size: 14px;
+}
+.big-footer-contents p{
+  padding-bottom: 5px;
 }
 
 /* footer section */
@@ -504,14 +662,61 @@ box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;}
   color: #00d084;
 }
 
+
+@media (max-width: 920px) {
+  .about-container{
+    justify-content: center;
+    width: 100%;
+  }
+  .about-image img{
+    width: 100%;
+    max-width: fit-content;
+  }
+  .about-content {
+    max-width: none;
+    width: 100%;
+}
+.blog-header{
+  display:block;
+  text-align: center;
+  justify-content: center;
+}
+.blog-text h2{
+   margin-bottom: 0px;
+}
+.blog-text p{
+  max-width: unset;
+  padding: 34px;
+}
+.footer-top{
+  justify-content: space-between;
+  gap: 49px;
+}
+.footer-bottom{
+  padding-top: 15px;
+}
+.blog-cards{
+  flex-wrap: unset;
+}
+}
+
 @media (max-width: 768px) {
+  .site-footer{
+    padding: 31px 40px 20px;
+  }
+
   .footer-top {
     flex-direction: column;
     align-items: flex-start;
   }
 
   .footer-links {
-    flex-direction: column;
+    /* flex-direction: column; */
+    gap: 57px;
+  }
+
+  .footer-brand p{
+    margin-bottom: 31px;
   }
 
   .footer-bottom {
@@ -519,6 +724,40 @@ box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;}
     align-items: center;
     text-align: center;
   }
+
+  .blog-text h2 {
+    font-size: 33px;
+    /* line-height: 1.3; */
+    margin-bottom: 10px;
+}
+.services-section{
+  padding: 10px 40px;
+}
+.hero-text h1{
+  font-size: 41px;
+}
+
+.blog-header{
+  justify-content: left;
+  text-align: left;
+  padding: 0px 35px;
+}
+
+.blog-text p{
+  padding: 24px 4px;
+}
+.blog-cards {
+  flex-wrap: wrap;
+}
+}
+
+@media (max-width: 420px) {
+  .blog-header{
+  padding: 0px;
+}
+    .hero-text {
+        max-width: 100%;
+    }
 }
 
 .chatbot{
@@ -567,12 +806,24 @@ img{
 form{
     padding:40px 40px;
 }
+
+input::placeholder,
+textarea::placeholder {
+  color: #fffdfd;
+  opacity: 1; /* Required in Firefox for full color */
+}
+
+.blurarea{
+  background: black;
+  height: 100%;
+}
+
 input[type=text], [type=email]{
     border: none;
     border-bottom: 1px solid #535151;
     outline:none;
     width:100%;
-    margin: 8px 0;
+    margin: 16px 0;
     padding:10px 0;
     background: transparent;
     color: white !important;
@@ -593,6 +844,16 @@ input :hover {
     margin: 20px 0px 20px 20px !important;
     padding:5px 0;
 }
+
+.password{
+    margin: 19px  0px 17px 20px !important;
+    padding:5px 0;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #535151;
+    color:white;
+}
+
 .beside{
     display:flex;  
     justify-content: space-between;

@@ -11,20 +11,36 @@
 </head>
 <body class="registerpage">
     <div class="container">
-        <div class="content">
-            <!-- <img src="{% static '/images/Cards.jpg' %}"> -->
-            <h1 class="form-title">Register Here</h1>
-            <form>
-            <input type="text" placeholder="NAME">
-            <div class="beside">
-                <input type="number" placeholder="PHONE NUMBER">
-                <input type="text" placeholder="JOB POSITION" class="jobposition"> 
+            <div class="content">
+                <div class="blurarea"></div>
+                <!-- <img src="{% static '/images/Cards.jpg' %}"> -->
+                <h1 class="form-title">Register Here</h1>
+                <!-- <form>
+                <input type="text" placeholder="NAME">
+                <div class="beside">
+                    <input type="number" placeholder="PHONE NUMBER">
+                    <input type="text" placeholder="JOB POSITION" class="jobposition"> 
+                </div>
+                <input type="email" placeholder="EMAIL ADDRESS">
+                <input type="number" placeholder="AGE"><br>
+                <button type="button">Submit</button>
+                </form> -->
+                    <form method="POST">
+                        {% csrf_token %}
+                        {{ form.name }}
+                        <div class="beside">
+                            {{ form.phone_number }}
+                            {{ form.password }}
+                        </div>
+                        {{ form.email }}
+                        <div class="beside">
+                            {{ form.age }}
+                            {{ form.job_position}}
+                        </div>
+                        <p style="text-align: center;margin-bottom: 10px;">Already Have An Account? <a href="/login" style="text-decoration: none;color: rgb(4, 216, 110);">Login Now</p>
+                        <button type="submit">Submit</button>
+                    </form>
             </div>
-            <input type="email" placeholder="EMAIL ADDRESS">
-            <input type="number" placeholder="AGE"><br>
-            <button type="button">Submit</button>
-            </form>
-        </div>
     </div>
 </body>
 </html>

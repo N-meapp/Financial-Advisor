@@ -4,83 +4,110 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>CountWise Blog</title>
-  <link rel="stylesheet" href="{% static '/css/blog.css' %}">
+  <title>Contact Us</title>
+  <link rel="stylesheet" href="{% static '/css/dia.css' %}">
+
 </head>
 <body onclick="outsideClickListener()">
-  <header>
-    <div class="logo">CountWise</div>
-    <!-- <nav>
-      <a href="/">Home</a>
-      <a href="/#about">About</a>
-      <a href="/#services">Service</a>
-      <a href="/dia">DIA</a>
-      <a href="/investor">Investing Insights</a>
-      <a href="/blog">Blogs</a>
-    </nav> -->
-    <nav class="web-view-nav">
-      <a href="/">Home</a>
-      <a href="/#about">About</a>
-      <a href="/#services">Service</a>
-      <a href="/dia">DIA</a>
-      <a href="/investor">Investing Insights</a>
-      <a href="/blog">Blogs</a>
-    </nav>
-    <nav>
-      <div class="mobile-view-nav">
-        <button class="navbar-btn" onclick="ShowNavbar()">
-            <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
-                <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
-            </svg>
-        </button>
-      </div>
-    </nav>
-    <div class="nav-items" id="nav-items">
-        <div class="item1"><a href="/">Home</a></div>
-        <div class="item1"><a href="/#about">About</a></br></div>
-        <div class="item1"><a href="/#services">Service</a></br></div>
-        <div class="item1"><a href="/dia">DIA</a></br></div>
-        <div class="item1"><a href="/investor">Investing Insights</a></br></div>
-        <div class="item1"><a href="/blog">Blogs</a></br></div>
-        <div class="item1"><a href="/contact">Contact us</a></div>
-    </div>
-    <a class="contact-btn" href="/contact">Contact us</a>
-  </header>
-
-  <section class="hero">
+    <header>
+        <div class="logo">CountWise</div>
+        <!-- <nav>
+        <a href="/">Home</a>
+        <a href="/#about">About</a>
+        <a href="/#services">Service</a>
+        <a href="#">DIA</a>
+        <a href="/investor">Investing Insights</a>
+        <a href="/blog">Blogs</a>
+        </nav> -->
+        <nav class="web-view-nav">
+            <a href="/">Home</a>
+            <a href="/#about">About</a>
+            <a href="/#services">Service</a>
+            <a href="/dia">DIA</a>
+            <a href="/investor">Investing Insights</a>
+            <a href="/blog">Blogs</a>
+            <!-- <a href="/logout">Logout</a> -->
+        </nav>
+        <nav>
+            <div class="mobile-view-nav">
+                <button class="navbar-btn" onclick="ShowNavbar()">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+                    </svg>
+                </button>
+            </div>
+        </nav>
+            <div class="nav-items" id="nav-items">
+                <div class="item1"><a href="/">Home</a></div>
+                <div class="item1"><a href="/#about">About</a></br></div>
+                <div class="item1"><a href="/#services">Service</a></br></div>
+                <div class="item1"><a href="/dia">DIA</a></br></div>
+                <div class="item1"><a href="/investor">Investing Insights</a></br></div>
+                <div class="item1"><a href="/blog">Blogs</a></br></div>
+                <div class="item1"><a href="/contact">Contact us</a></div>
+            </div>
+        <a class="contact-btn" href="/contact">Contact us</a>
+    </header>
+    <section class="dia-top">
+        <div class="dia-header">
+            <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-quote" viewBox="0 0 16 16">
+            <path d="M12 12a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1h-1.388q0-.527.062-1.054.093-.558.31-.992t.559-.683q.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 9 7.558V11a1 1 0 0 0 1 1zm-6 0a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1H4.612q0-.527.062-1.054.094-.558.31-.992.217-.434.559-.683.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 3 7.558V11a1 1 0 0 0 1 1z"/>
+            </svg> Happiness is not in the mere possession of money; it lies in the joy of achievement, in the thrill of creative effort
+            </p>
+        </div>
+        <div class="dia-header-image">
+            <img src="{% static '/images/download.png' %}" alt="">
+        </div>
+    </section>
+    {% if user %}
     <div class="container">
-      <h1>Latest accounting <span class="highlight">trends</span> and <span class="highlight">insights</span> here.</h1>
-      <p>Thitar iaculis ac id pulvinar nibh mauris tincidunt at nibh. Leo mattis eu tortor nisl sed elit.</p>
-      <div class="filters">
-        <button>All Blogs</button>
-        <button>News</button>
-        <button>Taxes</button>
-        <button>Planning</button>
-        <button>Accounting</button>
-      </div>
+        <h1>Upload Your Financial Status</h1>
+        <form method="post">
+            {% csrf_token %}
+            <div class="formdata-in-one">
+                <div class="username">
+                <div class="object2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+                        <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
+                    <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"/>
+                    </svg>
+                </div>
+                <div class="object1">
+                    {{ user }}
+                </div>
+                
+                </div>
+                {{ form.as_p }}
+            </div>
+            <div class="goal-liab">
+                <div class="liabilities">
+                    <!-- <h3>Liabilities</h3> -->
+                    {{ liability_formset.management_form }}
+                    {% for form in liability_formset %}
+                        {{ form.as_p }}
+                    {% endfor %}
+                </div>
+                <div class="goals">
+                    <!-- <h3>Goals</h3> -->
+                    {{ goals_formset.management_form }}
+                    {% for form in goals_formset %}
+                        {{ form.as_p }}
+                    {% endfor %}
+                </div>
+            </div>
+            <button class="dia-btn">
+                Submit
+            </button>
+        </form>
     </div>
-  </section>
+    {% else %}
 
-  <section class="blog-list container">
-    <div class="blog-card">
-      <img src="https://via.placeholder.com/300x200" alt="Blog 1" />
-      <div class="meta">
-        <span>August 5, 2024</span>
-        <span class="tag">Planning</span>
-      </div>
-      <h3>Essential Steps for Financial Goal Setting</h3>
-      <a href="#">Read More →</a>
+    <div class="dia-login">
+        <h1>Login Now For Explore More</h1>
+        <button class="dia-log-btn pulse"><a href="/login" style="text-decoration: none;">Login </a></button>
     </div>
-    <div class="blog-card">
-      <img src="https://via.placeholder.com/300x200" alt="Blog 2" />
-      <div class="meta">
-        <span>August 3, 2024</span>
-        <span class="tag">Taxes</span>
-      </div>
-      <h3>Improving Accuracy in Financial Reporting</h3>
-      <a href="#">Read More →</a>
-    </div>
-  </section>
+
+    {% endif %}
 
     <footer class="site-footer">
         <div class="footer-top">
@@ -144,8 +171,14 @@
         </div>
     </footer>
 
+    {% if show_alert %}
+        <script>
+            alert("You already uploaded financial data!");
+        </script>
+    {% endif %}
+
+
 
     <script src="{% static 'js/main.js' %}"></script>
-   
 </body>
 </html>

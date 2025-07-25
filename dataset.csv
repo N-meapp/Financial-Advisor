@@ -1,0 +1,24 @@
+income,expenses,assets,investment_risk,emergency_savings,total_liability,goal_type,is_saving_enough,is_overspending,is_debt_hurting,can_achieve_goal
+15000.0,19000.0,0.0,low,0.0,100000.0,car buying,False,False,False,0
+15000.0,19000.0,0.0,low,0.0,100000.0,car buying,False,False,False,0
+15000.0,19000.0,0.0,low,0.0,100000.0,car buying,False,False,False,0
+15000.0,16000.0,10000.0,low,0.0,100000.0,car buying,False,False,False,0
+15000.0,16000.0,10000.0,low,0.0,100000.0,car buying,False,False,False,0
+15000.0,19000.0,10000.0,low,0.0,100000.0,car buying,False,False,False,0
+15000.0,19000.0,10000.0,low,0.0,100000.0,car buying,False,False,False,0
+150000.0,100000.0,0.0,low,0.0,100000.0,car buying,False,False,False,0
+150000.0,100000.0,20000.0,medium,20000.0,1000000.0,car buying,False,False,False,0
+150000.0,150000.0,1000000.0,medium,200000.0,5000000.0,retirement,False,False,False,0
+150000.0,150000.0,1000000.0,medium,200000.0,5000000.0,car buying,False,False,False,0
+150000.0,150000.0,1000000.0,medium,200000.0,5000000.0,vacation,False,False,False,0
+15000.0,12000.0,40000.0,low,200000.0,5888.0,property buy,False,False,False,0
+15000.0,19000.0,10000.0,low,10000.0,100000.0,car buying,False,False,False,0
+15000.0,10000.0,10000.0,low,0.0,100000.0,car buying,False,False,False,0
+15000.0,10000.0,10000.0,low,0.0,100000.0,car buying,False,False,False,0
+15000.0,19000.0,0.0,low,0.0,100000.0,car buying,False,False,False,0
+150000.0,15000.0,1000000.0,low,10000000.0,100000000.0,retirement,False,False,False,0
+15000.0,15000.0,10000.0,low,10000.0,100000.0,car buying,False,False,False,0
+15000.0,10000.0,950.0,low,0.0,4000.0,car buying,False,False,False,0
+15000.0,15000.0,0.0,low,0.0,7675646.0,car buying,False,False,False,0
+15000.0,10000.0,950.0,low,0.0,4000.0,car buying,False,False,False,0
+150000.0,15000.0,100000.0,low,10000.0,4000.0,car buying,False,False,False,0

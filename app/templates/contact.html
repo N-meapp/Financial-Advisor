@@ -11,14 +11,41 @@
 <body>
     <header>
         <div class="logo">CountWise</div>
-        <nav>
+        <!-- <nav>
         <a href="/">Home</a>
-        <a href="#about">About</a>
-        <a href="#services">Service</a>
-        <a href="#">DIA</a>
+        <a href="/#about">About</a>
+        <a href="/#services">Service</a>
+        <a href="/dia">DIA</a>
         <a href="/investor">Investing Insights</a>
         <a href="/blog">Blogs</a>
+        </nav> -->
+        <nav class="web-view-nav">
+            <a href="/">Home</a>
+            <a href="/#about">About</a>
+            <a href="/#services">Service</a>
+            <a href="/dia">DIA</a>
+            <a href="/investor">Investing Insights</a>
+            <a href="/blog">Blogs</a>
+            <!-- <a href="/logout">Logout</a> -->
         </nav>
+        <nav>
+            <div class="mobile-view-nav">
+                <button class="navbar-btn" onclick="ShowNavbar()">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+                    </svg>
+                </button>
+            </div>
+        </nav>
+            <div class="nav-items" id="nav-items">
+                <div class="item1"><a href="/">Home</a></div>
+                <div class="item1"><a href="/#about">About</a></br></div>
+                <div class="item1"><a href="/#services">Service</a></br></div>
+                <div class="item1"><a href="/dia">DIA</a></br></div>
+                <div class="item1"><a href="/investor">Investing Insights</a></br></div>
+                <div class="item1"><a href="/blog">Blogs</a></br></div>
+                <div class="item1"><a href="/contact">Contact us</a></div>
+            </div>
         <a class="contact-btn" href="/contact">Contact us</a>
     </header>
   <section class="contact-section">
@@ -53,10 +80,10 @@
     </div>
   </section>
 
-      <footer class="site-footer">
+    <footer class="site-footer">
         <div class="footer-top">
             <div class="footer-brand">
-            <h2><span class="logo-icon">🟢</span> <strong>Count</strong>Wise</h2>
+            <h2><span class="logo-icon">🟢</span> <strong>Finan</strong>Co</h2>
             <p>Individuals around the globe, find a mentor, expand and learn from incredible people.</p>
             <a href="#" class="footer-cta">Contact us</a>
             </div>
@@ -65,48 +92,103 @@
             <div class="footer-column">
                 <h4>Main page</h4>
                 <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Service</a></li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">FAQ</a></li>
-                <li><a href="#">Team</a></li>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Service</a></li>
+                    <li><a href="/dia">DIA</a></li>
+                    <li><a href="/investor">Investing Insights</a></li>
+                    <li><a href="/blog">Blogs</a></li>
+                    <li><a href="/contact">Contact Us</a></li>
                 </ul>
             </div>
             <div class="footer-column">
-                <h4>Inner page</h4>
+                <h4>Keep In Touch</h4>
                 <ul>
-                <li><a href="#">Blog details</a></li>
-                <li><a href="#">Service details</a></li>
-                <li><a href="#">Team details</a></li>
-                <li><a href="#">Price</a></li>
-                <li><a href="#">Project</a></li>
-                <li><a href="#">Project details</a></li>
+                <li><b>Phone Number</b></li>
+                <li><a href="#">XXXXXXX</a></li>
+                <li><b>Email</b></li>
+                <li><a href="#">XXXXXX@gmail.com</a></li>
+                <li><a href="#">XXXXXX@gmail.com</a></li>
+                <!-- <li><a href="#">Project details</a></li> -->
                 </ul>
             </div>
             <div class="footer-column">
-                <h4>Utility pages</h4>
+                <h4><b>Address</b></h4>
                 <ul>
-                <li><a href="#">Style Guide</a></li>
-                <li><a href="#">Change log</a></li>
-                <li><a href="#">404 page</a></li>
-                <li><a href="#">Licenses</a></li>
-                <li><a href="#">Protected</a></li>
+                <li>XXXXX</li>
+                <li>XXX</li>
+                <li>YYYYYYY</li>
                 </ul>
             </div>
             </div>
         </div>
 
         <div class="footer-bottom">
-            <p>© 2025 CountWise. Powered by <span>Cybexel</span> | Designed by <span>Cybexel</span></p>
+            <p>© 2025 FinanCo. Powered by <span>Cybexel</span> | Designed by <span>Cybexel</span></p>
             <div class="footer-socials">
-            <a href="#">📷</a>
-            <a href="#">🐦</a>
-            <a href="#">💼</a>
-            <a href="#">🔗</a>
+                <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                    <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+                    </svg>
+                </a>
+                <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
+                    <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334q.002-.211-.006-.422A6.7 6.7 0 0 0 16 3.542a6.7 6.7 0 0 1-1.889.518 3.3 3.3 0 0 0 1.447-1.817 6.5 6.5 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.32 9.32 0 0 1-6.767-3.429 3.29 3.29 0 0 0 1.018 4.382A3.3 3.3 0 0 1 .64 6.575v.045a3.29 3.29 0 0 0 2.632 3.218 3.2 3.2 0 0 1-.865.115 3 3 0 0 1-.614-.057 3.28 3.28 0 0 0 3.067 2.277A6.6 6.6 0 0 1 .78 13.58a6 6 0 0 1-.78-.045A9.34 9.34 0 0 0 5.026 15"/>
+                    </svg>
+                </a>
+                <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                    <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
+                    </svg>
+                </a>
             </div>
         </div>
     </footer>
+
+    <script>
+    function ShowNavbar() {
+        const nav = document.getElementById('nav-items');
+        const button = document.querySelector('.navbar-btn');
+
+        // Toggle nav
+        if (nav.style.display === 'block') {
+            nav.style.display = 'none';
+            button.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+                    </svg>`
+            document.removeEventListener('click', outsideClickListener);
+        } else {
+            nav.style.display = 'block';    
+            button.textContent = '✖'; // Change to close icon
+
+            // Use timeout to ensure the initial button click doesn't trigger the listener
+            setTimeout(() => {
+                document.addEventListener('click', outsideClickListener);
+            }, 0);
+        }
+
+        function outsideClickListener(event) {
+            const isClickInsideNav = nav.contains(event.target);
+            const isClickOnButton = button.contains(event.target);
+
+            // Check if click is on nav link or outside
+            if (!isClickInsideNav && !isClickOnButton) {
+                hideNav();
+            }
+
+            // Also close if any <a> link is clicked inside nav
+            if (event.target.tagName === 'A' && isClickInsideNav) {
+                hideNav();
+            }
+        }
+
+        function hideNav() {
+            nav.style.display = 'none';
+            button.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+                    </svg>`
+            document.removeEventListener('click', outsideClickListener);
+        }
+    }
+</script>
+
 
 </body>
 </html>

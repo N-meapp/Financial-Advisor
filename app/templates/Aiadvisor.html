@@ -4,83 +4,114 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>CountWise Blog</title>
-  <link rel="stylesheet" href="{% static '/css/blog.css' %}">
+  <title>Contact Us</title>
+  <link rel="stylesheet" href="{% static '/css/dia.css' %}">
+
 </head>
 <body onclick="outsideClickListener()">
-  <header>
-    <div class="logo">CountWise</div>
-    <!-- <nav>
-      <a href="/">Home</a>
-      <a href="/#about">About</a>
-      <a href="/#services">Service</a>
-      <a href="/dia">DIA</a>
-      <a href="/investor">Investing Insights</a>
-      <a href="/blog">Blogs</a>
-    </nav> -->
-    <nav class="web-view-nav">
-      <a href="/">Home</a>
-      <a href="/#about">About</a>
-      <a href="/#services">Service</a>
-      <a href="/dia">DIA</a>
-      <a href="/investor">Investing Insights</a>
-      <a href="/blog">Blogs</a>
-    </nav>
-    <nav>
-      <div class="mobile-view-nav">
-        <button class="navbar-btn" onclick="ShowNavbar()">
-            <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
-                <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+    <header>
+        <div class="logo">CountWise</div>
+        <!-- <nav>
+        <a href="/">Home</a>
+        <a href="/#about">About</a>
+        <a href="/#services">Service</a>
+        <a href="#">DIA</a>
+        <a href="/investor">Investing Insights</a>
+        <a href="/blog">Blogs</a>
+        </nav> -->
+        <nav class="web-view-nav">
+            <a href="/">Home</a>
+            <a href="/#about">About</a>
+            <a href="/#services">Service</a>
+            <a href="/dia">DIA</a>
+            <a href="/investor">Investing Insights</a>
+            <a href="/blog">Blogs</a>
+            <!-- <a href="/logout">Logout</a> -->
+        </nav>
+        <nav>
+            <div class="mobile-view-nav">
+                <button class="navbar-btn" onclick="ShowNavbar()">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+                    </svg>
+                </button>
+            </div>
+        </nav>
+            <div class="nav-items" id="nav-items">
+                <div class="item1"><a href="/">Home</a></div>
+                <div class="item1"><a href="/#about">About</a></br></div>
+                <div class="item1"><a href="/#services">Service</a></br></div>
+                <div class="item1"><a href="/dia">DIA</a></br></div>
+                <div class="item1"><a href="/investor">Investing Insights</a></br></div>
+                <div class="item1"><a href="/blog">Blogs</a></br></div>
+                <div class="item1"><a href="/contact">Contact us</a></div>
+            </div>
+        <a class="contact-btn" href="/contact">Contact us</a>
+    </header>
+ 
+
+    <h2 style="text-align: center;text-transform: capitalize;font-size: 34px;">mr {{ user }} your financial statement<b>{{history.statement}}</b></h2>
+    <div class="advice-section">
+      {% for item in parsed_advice %}
+      <div class="advice-card">
+          <!-- <p><strong> Problem:</strong> {{ advice.advice_text }}</p> -->
+          <p><strong> Problem:</strong> {{ item.problem }}</p>
+          <p><strong> Solution:</strong> {{ item.solution }}</p>
+          
+          <p style="font-size: 18px;font-weight: 700;">Your current financial status is <strong>{{ score }}%</strong> healthy.</p>
+          
+          <div style="width: 150px; height: 150px; margin: auto;">
+            <svg width="150" height="150" viewBox="0 0 120 120">
+             
+              <circle
+                cx="60"
+                cy="60"
+                r="54"
+                stroke="#fff"
+                stroke-width="6"
+                fill="none"
+              />
+
+              
+              <circle
+                cx="60"
+                cy="60"
+                r="54"
+                stroke="#246912"
+                stroke-width="6"
+                fill="none"
+                stroke-dasharray="339.292"
+                stroke-dashoffset="{{ dash_offset }}"
+                stroke-linecap="round"
+                transform="rotate(-90 60 60)" 
+                 
+              />
+
+             
+              <text
+                x="60"
+                y="68"
+                text-anchor="middle"
+                font-size="22"
+                fill="#fff"
+              >{{ score }}%</text>
             </svg>
-        </button>
+          </div>
+        </div>
+        {% endfor %}
       </div>
-    </nav>
-    <div class="nav-items" id="nav-items">
-        <div class="item1"><a href="/">Home</a></div>
-        <div class="item1"><a href="/#about">About</a></br></div>
-        <div class="item1"><a href="/#services">Service</a></br></div>
-        <div class="item1"><a href="/dia">DIA</a></br></div>
-        <div class="item1"><a href="/investor">Investing Insights</a></br></div>
-        <div class="item1"><a href="/blog">Blogs</a></br></div>
-        <div class="item1"><a href="/contact">Contact us</a></div>
-    </div>
-    <a class="contact-btn" href="/contact">Contact us</a>
-  </header>
 
-  <section class="hero">
-    <div class="container">
-      <h1>Latest accounting <span class="highlight">trends</span> and <span class="highlight">insights</span> here.</h1>
-      <p>Thitar iaculis ac id pulvinar nibh mauris tincidunt at nibh. Leo mattis eu tortor nisl sed elit.</p>
-      <div class="filters">
-        <button>All Blogs</button>
-        <button>News</button>
-        <button>Taxes</button>
-        <button>Planning</button>
-        <button>Accounting</button>
-      </div>
+    <!-- <div class="card-container">
+    {% for item in parsed_advice %}
+    <div class="card">
+        <h3>Problem:</h3>
+        <p>{{ item.problem }}</p>
+        <h3>Solution:</h3>
+        <p>{{ item.solution }}</p>
     </div>
-  </section>
+    {% endfor %}
+</div> -->
 
-  <section class="blog-list container">
-    <div class="blog-card">
-      <img src="https://via.placeholder.com/300x200" alt="Blog 1" />
-      <div class="meta">
-        <span>August 5, 2024</span>
-        <span class="tag">Planning</span>
-      </div>
-      <h3>Essential Steps for Financial Goal Setting</h3>
-      <a href="#">Read More →</a>
-    </div>
-    <div class="blog-card">
-      <img src="https://via.placeholder.com/300x200" alt="Blog 2" />
-      <div class="meta">
-        <span>August 3, 2024</span>
-        <span class="tag">Taxes</span>
-      </div>
-      <h3>Improving Accuracy in Financial Reporting</h3>
-      <a href="#">Read More →</a>
-    </div>
-  </section>
 
     <footer class="site-footer">
         <div class="footer-top">
@@ -143,9 +174,7 @@
             </div>
         </div>
     </footer>
+  <script src="{% static '/js/main.js' %}"></script>
 
-
-    <script src="{% static 'js/main.js' %}"></script>
-   
 </body>
 </html>
